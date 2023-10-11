@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img src="honeybees.png" alt="">
+        <ul class="sidebar">
+            <li onclick="hidesidebar()"> <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#activities">Activities</a></li>
+            
+        </ul>
+        <ul>
+            <li class="text">Honeybees</li>
+            <li class="hideonMObile"><a href="#">Home</a></li>
+            <li class="hideonMObile"><a href="#about-us">About Us</a></li>
+            <li class="hideonMObile"><a href="#activities">Activities</a></li>
+          
+          <li onclick=showSidebar()>
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+          </li>
+        </ul>
+    </nav>
+    <div class="image-slider">
+        <div class="slider-image"><img src="image1.jpg" alt="Image 1"></div>
+        <div class="slider-image"><img src="image2.jpg" alt="Image 2"></div>
+        <div class="slider-image"><img src="image3.jpg" alt="Image 3"></div>
+    </div>
+    <a id="about-us"></a>
+    <section class="about-us">
+        <h2>About Us</h2>
+        <p>Welcome to Honeybees Preschool! We are a nurturing and inclusive preschool dedicated to providing a safe and loving environment where children can learn, grow, and thrive. At Honeybees, we believe in fostering a love for learning through play-based and age-appropriate activities that support children's social, emotional, and cognitive development.</p>
+        <p>Our passionate and experienced teachers are committed to creating a positive and engaging educational experience for your child. We emphasize building strong foundational skills, encouraging creativity, and promoting social interactions that help children build friendships and self-confidence.</p>
+        <p>What sets Honeybees apart:
+            <ul>
+                <li>Small class sizes for personalized attention</li>
+                <li>A curriculum designed to prepare children for a successful transition to kindergarten</li>
+                <li>A focus on social and emotional development through play and structured activities</li>
+                <li>A safe and secure environment for your child's well-being</li>
+            </ul>
+        </p>
+        <p>We look forward to welcoming your child into our Honeybees family. If you have any questions or would like to schedule a visit, please don't hesitate to contact us. Together, we'll help your child embark on an exciting journey of learning and discovery.</p>
+
+    </section>
+    <section id="activities" class="activities">
+        <h2>Activities at Honeybees</h2>
+        <div class="activity">
+            <img src="image1.jpg" alt="Activity 1">
+            <p>Description of the Gandhi Jayanti Activity: Celebrating the birth anniversary of Mahatma Gandhi, the Father of the Nation, with various events and cultural programs. Participants pay tribute to his ideals of peace, non-violence, and civil rights.</p>
+        </div>
+        <div class="activity">
+            <img src="image2.jpg" alt="Activity 2">
+            <p>Description of Karnataka Rajyotsava Activity: Celebrating Karnataka Rajyotsava, the state's formation day, with great enthusiasm and pride. This day marks the unification of all Kannada-speaking regions to form the state of Karnataka. The celebration includes cultural programs, parades, and showcasing the rich heritage and traditions of Karnataka.</p>
+</div>
+        </div>
+        <!-- Add more activity divs as needed -->
+    </section>
+    
+    <script>
+        function showSidebar(){
+            const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display='flex'
+        }
+        function hidesidebar(){
+            const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display='none'
+        }
+    </script>
+</body>
+</html>
